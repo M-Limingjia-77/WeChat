@@ -1,0 +1,362 @@
+/* 引入 */
+
+@import "./reset.less";
+@import "./adapter.less";
+@import "./variable.less";
+
+
+/* 样式 */
+html,body {
+	background-color: @colorr;
+}
+/* 头部 */
+.header {
+	width: 100%;
+	height: (88rem/75);
+	background-color: @black;
+	
+	a {
+		overflow: hidden;
+	}
+	i {
+		width: (20rem/75);
+		height: (31rem/75);
+		position: absolute;
+		top: (28rem/75);
+		left: (20rem/75);
+		background-image: url("../images/left.png");
+		background-size: (20rem/75) (31rem/75);
+	}
+	
+	span {
+		font-size: (28rem/75);
+		color: @white;
+		margin-left: (51rem/75);
+		box-sizing: border-box;
+		line-height: (88rem/75);
+		float: left;
+	}
+	
+	h4 {
+		font-size: (31rem/75);
+		text-align: center;
+		line-height: (88rem/75);
+		color: @white;
+	}
+
+	b {
+		width: (43rem/75);
+		height: (11rem/75);
+		position: absolute;
+		top: (38rem/75);
+		right: (27rem/75);
+		background-image: url("../images/point.png");
+		background-size: (43rem/75) (11rem/75);
+	}
+}
+
+
+/* 中间内容 */
+.main {
+	width: 100%;
+	padding-top: (21rem/75);
+	padding-left: (36rem/75);
+	padding-right: (36rem/75);
+	box-sizing: border-box;
+	background-color: @colorr;
+
+	
+	/* 1. 蓝色背景 */
+	.main_top {
+		position: relative;
+		height: (264rem/75);
+		border-radius: 5px;
+
+		background-image: url("../images/background.png");
+		background-size: (1136rem/75) (640rem/75);
+		
+		margin-bottom: (23rem/75);
+	}
+	
+	.main_header {
+		width: 30%;
+		position: relative;
+	}
+	.main_header a {
+		display: block;
+		width: 100%;
+		height: 100%;
+	}
+	.main_header img {
+		position: absolute;
+		left: (36rem/75);
+		top: (28rem/75);
+		width: (123rem/75);
+		height: (123rem/75);
+	}
+
+	.main_middle {
+		width: 40%;
+		position: absolute;
+		top: (37rem/75);
+		left: (180rem/75);
+	}
+
+	.main_middle p {
+		color: @white;
+		padding-bottom: (26rem/75);
+		font-size: (22rem/75);
+		white-space: nowrap;
+	}
+	.main_middle p:first-child {
+		font-size: (27rem/75);
+	}
+	.main_erweima {
+		width: 30%;
+		
+
+	}
+	.main_erweima span:first-child {
+		position: absolute;
+		top: (90rem/75);
+		right: (80rem/75);
+		font-size: (22rem/75);
+		color: @white;
+	}
+	.main_erweima span:last-child {
+		position: absolute;
+		top: (90rem/75);
+		right: (20rem/75);
+		font-size: (22rem/75);
+		color: @white;
+	}
+
+	.main_erweima span:first-child:before{
+  		content:'';
+  		position: absolute;
+  		width: (36rem/75);
+  		height: (36rem/75);
+  		top: (-50rem/75);
+  		right: (10rem/75);
+  		background-image: url(../images/erweima.png);
+  		background-size: (36rem/75) (36rem/75);
+	}
+	.main_erweima span:last-child:before{
+		content:'';
+		position: absolute;
+		width: (36rem/75);
+		height: (36rem/75);
+		top: (-50rem/75);
+		right: (5rem/75);
+		background-image: url(../images/pen.png);
+  		background-size: (36rem/75) (36rem/75);
+	}
+	
+	.main_p {
+		position: absolute;
+		left: (44rem/75);
+		bottom: (37rem/75);
+		font-size: (24rem/75);
+		color: @white;
+	}
+
+
+
+	/* 向我支付 */
+	.pay {
+		width: 100%;
+		height: (142rem/75);
+		border: 1px solid @border;
+		padding: (36rem/75) 0 (37rem/75) (41rem/75);
+		box-sizing: border-box;
+		border-radius: 5px;
+		margin-bottom: (22rem/75);
+		
+		background-color: @white;
+	}
+	.pay p {
+		font-size: (23rem/75);
+		color: @font;
+		padding-bottom: (20rem/75);
+		box-sizing: border-box;
+	}
+
+
+	/* 主页 */
+	.zhuye {
+	  width: 100%;
+	  height: (164rem/75);
+	  border: 1px solid @border;
+	  box-sizing: border-box;
+	  
+	  border-radius: 5px;
+	  background-color: @white;
+	  margin-bottom: (22rem/75);
+	}
+	
+	.zhuye ul {
+	  width: 100%;
+	  height: 100%;
+	  display: flex;
+	}
+
+	.zhuye li {
+	  flex: 1;
+	  height: 100%;
+	}
+
+	.zhuye a {
+  		display: block;
+  		width: 100%;
+  		height: 100%;
+  		line-height: (194rem/75); 
+  		text-align: center;
+  		position: relative;
+  		font-size: (23rem/75);
+  		color: @font;
+	}
+
+	.zhuye li:first-child a:before{
+  		content:'';
+  		position: absolute;
+  		width: (40rem/75);
+  		height: (40rem/75);
+  		top: (34rem/75);
+  		left: (64rem/75);
+  		background-image: url(../images/house.png);
+  		background-size: (40rem/75) (40rem/75);
+	}
+
+	.zhuye li:nth-child(2) a:before{
+  		content:'';
+  		position: absolute;
+  		width: (40rem/75);
+  		height: (40rem/75);
+  		top: (34rem/75);
+  		left: (64rem/75);
+  		background-image: url(../images/talk.png);
+  		background-size: (40rem/75) (40rem/75);
+	}
+
+	.zhuye li:nth-child(3) a:before{
+  		content:'';
+  		position: absolute;
+  		width: (40rem/75);
+  		height: (40rem/75);
+  		top: (34rem/75);
+  		left: (64rem/75);
+  		background-image: url(../images/erji.png);
+  		background-size: (40rem/75) (40rem/75);
+	}
+
+	.zhuye li:last-child a:before{
+  		content:'';
+  		position: absolute;
+  		width: (40rem/75);
+  		height: (40rem/75);
+  		top: (34rem/75);
+  		left: (64rem/75);
+  		background-image: url(../images/why.png);
+  		background-size: (40rem/75) (40rem/75);
+	}
+
+
+
+	/* 如何使用付费问答 */
+	.answer {
+		width: 100%;
+		height: (110rem/75);
+		border: 1px solid @border;
+		border-radius: 5px;
+		background-color: @white;
+		margin-bottom: (351rem/75);
+		box-sizing: border-box;
+
+		position: relative;
+	}
+
+	.answer i {
+		position: absolute;
+		top: (35rem/75);
+		left: (40rem/75);
+
+		width: (30rem/75);
+		height: (40rem/75);
+		background-image: url("../images/sanjiao.png");
+		background-size: (30rem/75) (40rem/75);
+	}
+	.answer p {
+		position: absolute;
+		left: (97rem/75);
+		top: (41rem/75);
+		font-size: (29rem/75);
+		color: @font;
+	}
+}
+
+
+
+/* 底部固定导航栏 */
+.footer {
+	width: 100%;
+	height: (98rem/75);
+	background-color: #FFF;
+	border-top: 1px solid @borderTop;
+
+	position: fixed;
+	bottom: 0;
+	z-index: 15;
+}
+
+.footerr ul {
+	height: 100%;
+	overflow: hidden;
+}
+
+.footer li {
+	width: 25%;
+	height: 100%;
+	line-height: (98rem/75);
+	text-align: center;
+	float: left;
+}
+.footer li a {
+	display: block;
+	width: 100%;
+}
+.footer li i {
+	display: block;
+	margin: (16rem/75) auto (-23rem/75);
+	width: (27rem/75);
+	height: (28rem/75);
+	background-image: url("../images/hot.png");
+	background-size: (27rem/75) (28rem/75);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
